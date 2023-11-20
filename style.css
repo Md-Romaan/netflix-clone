@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 98vh;
+    position: relative;
+}
+
+.main .box {
+    height: 98vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    height: 92px;
+}
+
+nav img {
+    width: 148px;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    color: white;
+    height: calc(100% - 92px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0px 30px;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(81, 80, 80);
+}
+
+.btn-sm {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    padding: 4px 16px;
+    border: none;
+    border-radius: 3px;
+    width: 77px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.btn-lg {
+    width: 208px;
+    height: 56px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 3px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.input-text {
+    width: 368px;
+    height: 56px;
+    background-color: rgba(23, 23, 23, 0.8);
+    opacity: 1;
+    border: 1px solid grey;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    padding-left: 16px;
+}
+
+.btn-select {
+    width: 126px;
+    height: 32px;
+    background-color: rgba(11, 11, 11, 0.7);
+    color: white;
+    font-weight: bold;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.my-flex {
+    display: flex;
+
+}
+
+/* Section ............................. */
+
+.first {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 450px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 27px;
+    right: 37px;
+    width: 344px;
+
+}
+
+.first>div:first-child>span:first-child {
+    font-size: 48px;
+    font-weight: 900;
+    padding: 20px 0px;
+}
+
+.first>div:first-child>span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.first>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+.font-48 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.font-24 {
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.faq {
+    color: white;
+    padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faq-box {
+    display: flex;
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+    color: white;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.faq-box:hover {
+    background-color: #414141;
+}
+
+.second-email {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.second-email span {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.centered {
+    justify-content: center;
+}
+
+.second-email div {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+}
+
+footer .columns {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#ques {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .columns a {
+    color: white;
+}
+
+.faq-box svg{
+    filter:invert(100%);
+}
+
+
+/* media Queries ------------------------- */
+/* 1 breakpoint */
+@media screen and (max-width: 962px) {
+
+    .first {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .first>div:first-child>span:first-child {
+        font-size: 32px;
+    }
+
+    .first>div:first-child>span:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .font-48 {
+        font-size: 32px;
+    }
+
+    .font-24 {
+        font-size: 18px;
+    }
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+}
+
+/* 2 breakpoint */
+@media screen and (max-width: 665px) {
+    .input-text {
+        width: 286px;
+        height: 42px;
+    }
+
+    .btn-lg {
+        width: 125px;
+        height: 41px;
+        font-size: 18px;
+    }
+}
+
+/* 3 breakpoint */
+@media screen and (max-width: 426px) {
+    .main {
+        height: 110vh;
+    }
+
+    .main .box {
+        height: 110vh;
+    }
+
+    .my-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+
+/* 4 breakpoint */
+@media screen and (max-width: 395px) {
+    nav img {
+        width: 80px;
+        height: 37px;
+    }
+
+    .btn-select{
+        width: 94px;
+        height: 25px;
+    }
+
+    .btn-sm{
+        width: 67px;
+        height: 24px;
+        font-size: 10px;
+    }
+
+}
